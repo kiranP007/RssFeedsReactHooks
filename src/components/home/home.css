@@ -1,0 +1,129 @@
+.home-title {
+    font-size: 34px;
+    color: #121212;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-desc {
+    color: #171b1f;
+    font-size: 16px;
+    text-align: center;
+}
+
+.project-dashboard-container {
+    display: grid;
+    padding: 20px 10%;
+    grid-template-columns: calc(25% - 15px) calc(25% - 15px) calc(25% - 15px) calc(25% - 15px);
+    grid-gap: 20px;
+}
+
+.project-thumbnail-container {
+    border-radius: 4px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0,0,0,.18), 0 2px 4px rgba(0,0,0,.16);
+    transition-duration: 0.3s;
+    padding: 20px;
+    position: relative;
+}
+
+.project-thumbnail-container:hover {
+    background-color: #e6f9fc;
+    box-shadow: 0 0 1px rgba(0,0,0,.16), 0 4px 8px rgba(0,0,0,.16);
+}
+
+.project-thumbnail-container > .delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-thumbnail-container > .delete-icon > span {
+    font-size: 18px !important;
+    color: red !important;
+}
+
+.create-project-thumbnail {
+    border-radius: 4px;
+    height: 100px;
+    background-color: #e6f9fc;
+    box-shadow: 0 0 1px rgba(0,0,0,.16), 0 4px 8px rgba(0,0,0,.16);
+    padding: 20px;
+    position: relative;
+}
+
+.create-project-thumbnail > div:nth-child(1) {
+    text-align: center;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.thumbail-title {
+    width: 100%;
+}
+
+.button-container {
+    width: 71px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 100px;
+    padding: 0 10px;
+    line-height: 100%;
+    height: 36px;
+    margin-left: 10px;
+    position: relative;
+    color: rgba(0,0,0,0.2);
+    fill: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.04);
+    transition: background-color 150ms ease;
+}
+
+.button-container:hover {
+    cursor: pointer;
+    border: none;
+    background-color: #00a0d1;
+    color: #fff; 
+}
+
+.button-container > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.view-button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform:translate(-50%);
+}
+
+.create-button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform:translate(-50%);
+}
+
+.create-button-container > .button-container {
+    cursor: pointer;
+    border: none;
+    background-color: #00a0d1;
+    color: #fff;
+}

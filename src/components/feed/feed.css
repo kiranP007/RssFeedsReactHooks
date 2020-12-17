@@ -1,0 +1,118 @@
+.feed-modal-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.feed-modal-container > div {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    z-index: 101;
+    width: 60%;
+    height: calc(100% - 20px);
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.feed-modal-title {
+    font-size: 34px;
+    color: #121212;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+
+.feed-modal-close-icon {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.feed-modal-close-icon > div {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.feed-modal-close-icon > div > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.feed-modal-refresh-icon {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.feed-modal-refresh-icon > div {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.feed-modal-refresh-icon > div > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.feed-container {
+    margin: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0,0,0,.18), 0 2px 4px rgba(0,0,0,.16);
+    transition-duration: 0.3s;
+    padding: 20px;
+}
+
+.feed-container:hover {
+    background-color: #e6f9fc;
+    box-shadow: 0 0 1px rgba(0,0,0,.16), 0 4px 8px rgba(0,0,0,.16);
+}
+
+.feed-container > .author {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.feed-container > .content {
+    color: rgba(0,0,0,0.5);
+    font-size: 14px;
+}
+
+.feed-container > a {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.loader{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Phi_fenomeni.gif/50px-Phi_fenomeni.gif') 
+                50% 50% no-repeat rgb(249,249,249);
+  }
