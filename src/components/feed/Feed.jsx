@@ -6,7 +6,7 @@ function Feed({feed}) {
             <div>{feed.title}</div>
             {feed.author && <div className="author">- {feed.author}</div>}
             {feed.content && <div className="content">{feed.content}</div>}
-            {feed.link && <a href={feed.link} target="_blank">View more</a>}
+            {feed.link && <a href={feed.link} target="_blank" rel="noopener noreferrer">View more</a>}
         </div>
     )
 }

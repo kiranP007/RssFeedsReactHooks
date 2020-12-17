@@ -14,7 +14,7 @@ function ProjectThumbnail({projectObj, setSelectedProject, removeProjectFromList
 
     return (
         <div className="project-thumbnail-container">
-            <div className="delete-icon" onClick={() => handleDeleteClick(projectObj.uid)}><span class="material-icons">delete_outline</span></div>
+            <div className="delete-icon" onClick={() => handleDeleteClick(projectObj.uid)}><span className="material-icons">delete_outline</span></div>
             <span className="ellipsis inline-block thumbail-title">{projectObj.name}</span>
             <div className="view-button-container"><Button handleClick={() => setSelectedProject(projectObj)}>View</Button></div>
         </div>

@@ -28,7 +28,7 @@ function FeedModal({selectedProject, setSelectedProject}) {
             setLoadingState(false)
             setErrorMsg(errObj.msg)
         })    
-    }, [refresh])
+    }, [refresh, selectedProject.link])
 
     const handleRefreshClick = () => {
         setFeeds([])
@@ -48,7 +48,7 @@ function FeedModal({selectedProject, setSelectedProject}) {
                     </div>
                     <div className="feed-modal-refresh-icon" >
                         <div>
-                            <i class="material-icons" onClick={() => handleRefreshClick()}>refresh</i>
+                            <i className="material-icons" onClick={() => handleRefreshClick()}>refresh</i>
                         </div>
                     </div>
                     <div className="feed-modal-title">{selectedProject.name}</div>
